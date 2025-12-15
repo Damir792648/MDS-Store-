@@ -82,7 +82,9 @@ body {
     background: #ff0d00;
 }
 
-
+.menu:hover .submenu {
+    display: block;
+}
 
 /* ================= HEADER RIGHT ================= */
 
@@ -202,26 +204,3 @@ table th, table td {
 
 
 
-.menu {
-    position: relative;
-}
-
-.submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: white;
-    padding: 10px;
-    min-width: 200px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-.menu.active .submenu {
-    display: block;
-}
-
-.menu-title {
-    cursor: pointer;
-    user-select: none;
-}
